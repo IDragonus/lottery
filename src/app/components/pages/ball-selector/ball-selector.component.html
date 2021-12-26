@@ -1,0 +1,42 @@
+<div class="main">
+  <div class="title">
+    <p>Select your bet</p>
+  </div>
+  <div class="options pt-5 pb-5 pt">
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="underline">1</mat-button-toggle>
+      <mat-button-toggle value="underline">2</mat-button-toggle>
+      <mat-button-toggle value="underline">3</mat-button-toggle>
+      <mat-button-toggle value="underline">4</mat-button-toggle>
+      <mat-button-toggle value="underline">5</mat-button-toggle>
+      <mat-button-toggle value="underline">6</mat-button-toggle>
+      <mat-button-toggle value="underline">7</mat-button-toggle>
+      <mat-button-toggle value="underline">8</mat-button-toggle>
+      <mat-button-toggle value="underline">9</mat-button-toggle>
+      <mat-button-toggle value="underline">10</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <!-- <div class="number" (click)="test()"><p class="opt">1</p></div> -->
+  </div>
+  <!-- <div class="bet"> -->
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">5x</span>
+    <input type="text" class="form-control" />
+    <button class="btn btn-primary" (click)="calculate()">Ok</button>
+  </div>
+  <!-- </div> -->
+  <div class="result">
+    <p><b>Total:</b> {{ total }}: $</p>
+    <button class="btn btn-primary mybuttom">Place bet</button>
+  </div>
+</div>
+
+<!-- <div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-sm"
+  />
+</div> -->
